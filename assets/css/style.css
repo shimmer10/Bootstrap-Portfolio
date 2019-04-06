@@ -16,10 +16,8 @@ h1{
     border-bottom: 3px solid #dddddd;
 }
 #main-section {
-    margin: 10% 0;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #dddddd;
+    margin: 15% 0;
+    border: 1px solid #dddddd;
     background: #ffffff;
     resize: vertical;
 }
@@ -101,8 +99,7 @@ label {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 #name {
-    bottom: 0;
-    top: 0;
+    position: relative;
     height: 70px;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 30px;
@@ -170,79 +167,63 @@ label {
 
     #bio-image {
         position: static;
-        padding-top: 10px;
     }
 
     /* main section */
 
-    #main {
-        margin: 50px 10px;
-    }
     #main-section {
         font-size: 13px;
-        margin-top: 100px;
+        margin-top: 30%;
         resize: horizontal;
         padding: 5px 15px;
     }
 
     /* header */
 
-    #header {
-        overflow: hidden;
-    }
-    #header-navbar {
-        width: 100%;
-    }
     #name {
-        float: none;
-        width: 100%;
         margin-left: 0;
-        padding: 0;
+        padding: 0 15px;
     }
     .header a {
-        float: none;
-        float: none;
-        width: 100%;
         text-align: center;
-    }
-    .info-section {
-        margin-left: 25%;
     }
 }
 @media (min-width: 641px) and (max-width: 768px) {
+
+    /* general */
+
     p {
         line-height: 2em;
     }
-    #header-navbar {
-        height: 60px;
-    }
-    .info-section {
-        margin-left: 55%;
-    }
-    #line {
-        margin-bottom: 10px;
-    }
+ 
+    /* main section */
+
     #main-section {
-        margin-top: 15%;
+        margin-top: 20%;
         margin-bottom: 15%;
-        resize: horizontal;
         font-size: 14px;
-        padding: 5px 20px;
+    }
+
+    /* header */
+    
+    #header-navbar {
+        height: 80px;
     }
     #name {
+        height: 60px;
         margin-left: 5%;
         padding: 0 20px;
     }
-}
+} 
 @media (min-width: 769px) and (max-width: 980px) {
+    p {
+        line-height: 2em;
+    }
     #main-section {
-        margin-top: 12%;
+        margin-top: 15%;
         font-size: 15px;
         }
     #name {
         margin-left: 7%;
-    }
-    .info-section {
-        margin-left: 60%;
     }
 }
