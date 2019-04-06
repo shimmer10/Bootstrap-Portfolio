@@ -107,7 +107,6 @@ label {
     color: #ffffff;
     text-decoration: none;
     background: #4aaaa5;
-    margin-left: 15%;
     display: block;
     padding: 10px 15px;
 } 
@@ -174,8 +173,17 @@ label {
     #main-section {
         font-size: 13px;
         margin-top: 30%;
-        resize: horizontal;
         padding: 5px 15px;
+        overflow: hidden;
+        overflow: scroll;
+        max-width: 500px;
+        margin-left: 30px;
+    }
+
+    /* contact */
+
+    input::placeholder {
+        font-size: 13px;
     }
 
     /* header */
@@ -204,6 +212,12 @@ label {
         font-size: 14px;
     }
 
+    /* contact */
+
+    input::placeholder {
+        font-size: 14px;
+    }
+
     /* header */
     
     #header-navbar {
@@ -216,14 +230,30 @@ label {
     }
 } 
 @media (min-width: 769px) and (max-width: 980px) {
+
+    /* general */
+
     p {
         line-height: 2em;
     }
+
+    /* main-section */
+
     #main-section {
         margin-top: 15%;
         font-size: 15px;
-        }
+    }
+
+    /* contact */
+
+    input::placeholder {
+        font-size: 15px;
+    }
+  
+    /* header */
+
     #name {
         margin-left: 7%;
     }
+
 }
